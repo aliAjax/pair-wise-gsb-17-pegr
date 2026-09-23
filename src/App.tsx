@@ -1,4 +1,5 @@
 import "./styles.css";
+import AcceptancePanel from "./components/AcceptancePanel";
 
 const project = {
   "id": "hxwl-03",
@@ -135,6 +136,8 @@ function App() {
           </div>
         </section>
       </section>
+
+      <AcceptancePanel />
 
       <section className="records panel">
         <div className="section-heading">
