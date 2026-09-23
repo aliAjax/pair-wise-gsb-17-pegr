@@ -128,6 +128,382 @@ label span {
   font-size: 34px;
 }
 
+.metric-hint {
+  margin: 8px 0 0;
+  color: #64748b;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.stack-card small {
+  color: #64748b;
+  font-size: 12px;
+}
+
+.blocked-banner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 14px 18px;
+  border: 1px solid #fecdd3;
+  border-left: 5px solid #e11d48;
+  border-radius: 8px;
+  background: #fff1f2;
+  color: #9f1239;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.blocked-banner strong {
+  color: #e11d48;
+}
+
+.blocked-banner.storage-warn {
+  border-color: #fde68a;
+  border-left-color: #d97706;
+  background: #fffbeb;
+  color: #92400e;
+}
+
+.blocked-banner.storage-warn strong {
+  color: #d97706;
+}
+
+.create-form {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.rule-list {
+  margin: 0;
+  padding-left: 18px;
+  color: #526070;
+  font-size: 13px;
+  line-height: 2;
+}
+
+.empty-tip {
+  color: #64748b;
+  margin-bottom: 0;
+}
+
+.hole-list {
+  display: grid;
+  gap: 16px;
+}
+
+.hole-card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 18px;
+  background: #fbfdff;
+}
+
+.hole-drilling {
+  border-left: 5px solid #64748b;
+}
+
+.hole-pending {
+  border-left: 5px solid #d97706;
+}
+
+.hole-sealable {
+  border-left: 5px solid var(--accent);
+}
+
+.hole-sealed {
+  border-left: 5px solid #1d4ed8;
+  background: #f8fafc;
+}
+
+.hole-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.hole-head h3 {
+  margin-bottom: 2px;
+}
+
+.hole-head small {
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+.badge {
+  flex: none;
+  border-radius: 999px;
+  padding: 5px 14px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.badge-drill {
+  background: #64748b;
+}
+
+.badge-pending {
+  background: #d97706;
+}
+
+.badge-sealable {
+  background: var(--accent);
+}
+
+.badge-sealed {
+  background: #1d4ed8;
+}
+
+.hole-summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.hole-summary div {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 10px 12px;
+  background: #ffffff;
+}
+
+.hole-summary span {
+  display: block;
+  color: #64748b;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.hole-summary strong {
+  font-size: 18px;
+}
+
+.hole-section {
+  border-top: 1px dashed var(--border);
+  padding-top: 14px;
+  margin-top: 14px;
+}
+
+.hole-section h4 {
+  margin: 0 0 10px;
+  font-size: 14px;
+}
+
+.run-chain {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.run-node {
+  border: 1px solid color-mix(in srgb, var(--primary) 30%, #dbe3ef);
+  background: color-mix(in srgb, var(--primary) 7%, #ffffff);
+  border-radius: 999px;
+  padding: 4px 12px;
+  font-size: 13px;
+}
+
+.inline-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.inline-form input {
+  flex: 1;
+}
+
+.locked-note {
+  margin-bottom: 0;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.hydro-form {
+  display: grid;
+  grid-template-columns: 1fr 160px 1fr auto;
+  gap: 12px;
+  align-items: end;
+}
+
+.hydro-form .check-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 42px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0 12px;
+}
+
+.hydro-form .check-row input {
+  width: auto;
+  min-height: auto;
+}
+
+.pending-note {
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: #fffbeb;
+  color: #92400e;
+  font-size: 13px;
+}
+
+.sealable-note {
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: #f0fdfa;
+  color: #0f766e;
+  font-size: 13px;
+}
+
+.seal-box {
+  display: flex;
+  gap: 12px;
+  align-items: end;
+}
+
+.seal-box label {
+  flex: 1;
+}
+
+.sealed-box {
+  flex-direction: column;
+  align-items: start;
+  gap: 4px;
+  border-radius: 6px;
+  padding: 12px 14px;
+  background: #eff6ff;
+  color: #1e3a8a;
+}
+
+.sealed-box small {
+  color: #64748b;
+}
+
+.pending-box {
+  display: grid;
+  gap: 4px;
+  border-radius: 6px;
+  padding: 12px 14px;
+  background: #fffbeb;
+  color: #92400e;
+  font-size: 13px;
+}
+
+.pending-box small {
+  color: #a16207;
+}
+
+.revision-box h4 {
+  margin-bottom: 10px;
+}
+
+.revision-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.revision-form label:last-of-type,
+.revision-form button {
+  grid-column: 1 / -1;
+}
+
+select,
+textarea {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0 12px;
+  color: #172033;
+  font: inherit;
+  background: #ffffff;
+}
+
+select {
+  min-height: 42px;
+}
+
+textarea {
+  padding: 10px 12px;
+  resize: vertical;
+}
+
+.revision-history {
+  display: grid;
+  gap: 8px;
+}
+
+.revision-item {
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--primary);
+  border-radius: 6px;
+  padding: 10px 12px;
+  background: #ffffff;
+  font-size: 13px;
+}
+
+.revision-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+
+.revision-head time {
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+.revision-item p {
+  margin: 2px 0;
+  line-height: 1.6;
+}
+
+.revision-item s {
+  color: #94a3b8;
+}
+
+.revision-reason {
+  color: #526070;
+}
+
+@media (max-width: 860px) {
+  .hero,
+  .workspace,
+  .metrics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .field-grid,
+  .hole-summary,
+  .hydro-form,
+  .revision-form {
+    grid-template-columns: 1fr;
+  }
+
+  .inline-form,
+  .seal-box {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
 .metric-card i {
   position: absolute;
   right: 18px;
